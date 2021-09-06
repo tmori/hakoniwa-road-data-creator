@@ -15,7 +15,6 @@ entry = RoadEntry('road2', 180.0, '+z')
 root.add(entry)
 
 entry = RoadEntry('road1', 90.0, '+x')
-entry.connect_direction = "+x"
 root.add(entry)
 
 entry = RoadEntry('road2', 270.0, '+x')
