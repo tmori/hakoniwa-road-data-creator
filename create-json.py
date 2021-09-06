@@ -5,33 +5,20 @@ filepath = 'road_map.json'
         
 root = RoadRoot()
 
-entry = RoadEntry()
-entry.prefab_name = 'road2'
-entry.rotation = 0.0
+entry = RoadEntry('road2', 0.0, None)
 root.add(entry)
 
-entry = RoadEntry()
-entry.prefab_name = 'road1'
-entry.rotation = 0.0
-entry.connect_direction = "+z"
+entry = RoadEntry('road1', 0.0, '+z')
 root.add(entry)
 
-entry = RoadEntry()
-entry.prefab_name = 'road2'
-entry.rotation = 180.0
-entry.connect_direction = "+z"
+entry = RoadEntry('road2', 180.0, '+z')
 root.add(entry)
 
-entry = RoadEntry()
-entry.prefab_name = 'road1'
-entry.rotation = 90.0
+entry = RoadEntry('road1', 90.0, '+x')
 entry.connect_direction = "+x"
 root.add(entry)
 
-entry = RoadEntry()
-entry.prefab_name = 'road2'
-entry.rotation = 270.0
-entry.connect_direction = "+x"
+entry = RoadEntry('road2', 270.0, '+x')
 root.add(entry)
 
 root.dump(filepath)

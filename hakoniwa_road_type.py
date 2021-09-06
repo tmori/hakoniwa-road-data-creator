@@ -8,6 +8,12 @@ class RoadEntry:
     repeat_num = None
     scale = None
 
+
+    def __init__(self, prefab, rot, dir):
+        self.prefab_name = prefab
+        self.rotation = rot
+        self.connect_direction = dir
+        
     def encode(self):
         json_data = dict()
         json_data['prefab_name'] = self.prefab_name
